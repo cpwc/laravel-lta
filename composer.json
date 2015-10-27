@@ -13,7 +13,7 @@
     "illuminate/contracts": "5.0.*|5.1.*",
     "illuminate/support": "5.0.*|5.1.*",
     "graham-campbell/manager": "~2.2",
-    "cpwc/php-lta-api": "dev-master"
+    "cpwc/php-lta-api": "^1.0"
   },
   "require-dev": {
     "graham-campbell/testbench": "~3.0",
