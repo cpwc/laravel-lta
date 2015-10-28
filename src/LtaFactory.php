@@ -58,13 +58,13 @@ class LtaFactory
      */
     protected function getHttpClient(array $config)
     {
-        $options = [
-            'base_url'    => array_get($config, 'baseUrl', 'https://api.github.com/'),
-            'api_version' => array_get($config, 'version', 'v3'),
-            'cache_dir'   => $this->path,
-        ];
+//        $options = [
+//            'base_url'    => array_get($config, 'baseUrl', 'https://api.github.com/'),
+//            'api_version' => array_get($config, 'version', 'v3'),
+//            'cache_dir'   => $this->path,
+//        ];
 
-        return new HttpClient($options);
+        return new HttpClient();
     }
 
     /**
