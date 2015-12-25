@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'default'     => 'main',
+    'default' => 'main',
     /*
     |--------------------------------------------------------------------------
     | Lta Connections
@@ -28,27 +28,11 @@ return [
 
     'connections' => [
 
-        'main'        => [
-            'accountKey'   => 'your-account-key',
-            'uniqueUserId' => 'your-unique-user-id',
+        'main' => [
+            'accountKey'   => env('LTA_ACCOUNT_KEY', ''),
+            'uniqueUserId' => env('LTA_UNIQUE_USER_ID', ''),
             'method'       => 'token',
-            // 'baseUrl' => 'https://api.github.com/',
-            // 'version' => 'v3',
-        ],
-        'alternative' => [
-            'clientId'     => 'your-client-id',
-            'clientSecret' => 'your-client-secret',
-            'method'       => 'application',
-            // 'baseUrl'      => 'https://api.github.com/',
-            // 'version'      => 'v3',
-        ],
-        'other'       => [
-            'username' => 'your-username',
-            'password' => 'your-password',
-            'method'   => 'password',
-            // 'baseUrl'  => 'https://api.github.com/',
-            // 'version'  => 'v3',
-        ],
+        ]
 
     ],
 
